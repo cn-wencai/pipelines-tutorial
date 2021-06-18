@@ -6,6 +6,7 @@ spec:
   serviceAccountName: pipeline
   triggers:
     - name: vote-trigger
+      serviceAccountName: pipeline
       bindings:
         - ref: vote-app
       template:
